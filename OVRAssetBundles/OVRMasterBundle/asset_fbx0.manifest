@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2045383306
+CRC: 430332288
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1578abb339ce3eb75da58d8ce031ddbe
+    Hash: 24b31c80bcd3c7b40bbf9c8101684b3c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ae2cf77de671e115b4e55d2b65767202
+    Hash: 15cb7cbdbf941af908e124c39c1b3a4c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -23,11 +23,16 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
 Assets:
-- Assets/MASH Virtual/Assets/Mesh/Table.fbx
-- Assets/Knife/Model/lod3.fbx
-- Assets/Knife/Model/lod2.fbx
-- Assets/Knife/Model/lod1.fbx
-- Assets/Knife/Model/lod0.fbx
+- Assets/Asset Store/MASH Virtual/Assets/Mesh/Table.fbx
+- Assets/Asset Store/Knife/Model/lod3.fbx
+- Assets/Asset Store/Knife/Model/lod2.fbx
+- Assets/Asset Store/Knife/Model/lod1.fbx
+- Assets/Asset Store/Knife/Model/lod0.fbx
+- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Left.fbx
 Dependencies:
-- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_mat0

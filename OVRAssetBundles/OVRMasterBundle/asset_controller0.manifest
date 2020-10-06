@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2095834692
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4bc3f5be44af09452ff87835ee08708b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 16fb4036ce23def64f3dea7aa9ab54d3
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Clean Settings UI/Animations/Slider.controller
+Dependencies:
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_png0

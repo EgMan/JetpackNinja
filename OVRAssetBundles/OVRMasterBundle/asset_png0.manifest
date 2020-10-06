@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 980505153
+CRC: 27322719
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 94afe3057e30e7e208c477165149a856
+    Hash: 326c4256041c73b3ae2a9716ec513d4d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9e6ad29cbd2df8fbe1a15315db0e51ab
@@ -14,21 +14,26 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
+- Assets/Clean Settings UI/Images/line_hover.png
+- Assets/Clean Settings UI/Images/toggle_background_down.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_bar.png
-- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_New_AlbedoTransparency.png
-- Assets/Knife/Material/Albedo.png
+- Assets/Clean Settings UI/Images/line_up.png
+- Assets/Asset Store/MASH Virtual/Assets/Texutre/Parking_Table_Table_New_AlbedoTransparency.png
+- Assets/Clean Settings UI/Images/line_background.png
+- Assets/Asset Store/Knife/Material/Albedo.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/translucent_01.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/header.png
-- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_MetallicSmoothness.png
+- Assets/Asset Store/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_MetallicSmoothness.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/button.png
-- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_AlbedoTransparency.png
+- Assets/Asset Store/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_AlbedoTransparency.png
+- Assets/Clean Settings UI/Images/toggle_background_hover.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_slider.png
-- Assets/Knife/Material/MetallicSmoothness.png
-- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_New_MetallicSmoothness.png
+- Assets/Asset Store/Knife/Material/MetallicSmoothness.png
+- Assets/Asset Store/MASH Virtual/Assets/Texutre/Parking_Table_Table_New_MetallicSmoothness.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/separator.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png
-- Assets/Knife/Material/Normal.png
+- Assets/Asset Store/Knife/Material/Normal.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_off.png
-- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_Normal.png
+- Assets/Asset Store/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_Normal.png
 - Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_on.png
 Dependencies: []

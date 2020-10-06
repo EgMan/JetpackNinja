@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3466369350
+CRC: 230180311
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 18f2187f02a491e65c39ae27fb1ae1e8
+    Hash: 92bdc08c6625787aca13f95f1390afe9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: bfdf4b113a54113161b164c6d1549412
+    Hash: aad93ed5c15d02b44bac986b45b26893
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -33,11 +33,19 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
 - Class: 81
   Script: {instanceID: 0}
 - Class: 82
   Script: {instanceID: 0}
 - Class: 83
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
   Script: {instanceID: 0}
 - Class: 104
   Script: {instanceID: 0}
@@ -100,6 +108,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: b558aa8ebb866bd4da56c536a7b4eb71, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 8175251fcedad26428edf706a48e7d75, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 6129418f327d6914dac4318c94449577, type: 3}
@@ -132,7 +142,6 @@ ClassTypes:
 Assets:
 - Assets/Scenes/SampleScene.unity
 Dependencies:
-- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_prefab0
-- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_mat0
-- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_fbx0
-- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_wav0
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_prefab0
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_fbx0

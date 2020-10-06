@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3752304024
+CRC: 2068977236
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 50d906aeabbfe89f7274270c11ae36b7
+    Hash: 9fa83792c0289b80ffc2211c19144ed0
   TypeTreeHash:
     serializedVersion: 2
     Hash: 21c99c86a43ad817b2cb7f65458ae090
@@ -16,11 +16,13 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 Assets:
-- Assets/Knife/Material/Knife_mat.mat
-- Assets/New Material.mat
-- Assets/Knife/Material/Knife_mat_lod.mat
-- Assets/MASH Virtual/Assets/Material/Table Old Mat.mat
-- Assets/New Material 1.mat
-- Assets/MASH Virtual/Assets/Material/Table New Mat.mat
+- Assets/Asset Store/Knife/Material/Knife_mat.mat
+- Assets/Materials/New Material.mat
+- Assets/Asset Store/Knife/Material/Knife_mat_lod.mat
+- Assets/Asset Store/MASH Virtual/Assets/Material/Table Old Mat.mat
+- Assets/Materials/New Material 1.mat
+- Assets/Asset Store/MASH Virtual/Assets/Material/Table New Mat.mat
+- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat
 Dependencies:
-- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Dev/JetpackNinja/OVRAssetBundles/OVRMasterBundle/asset_tga0
