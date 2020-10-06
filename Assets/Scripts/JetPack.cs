@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class JetPack : MonoBehaviour
 {
     public float maxFuel;
+    public DamageHandeler lifeline;
     public Slider FuelBar, ThrustBar;
     public Text FuelLabel, ThrustLabel;
     public float thrustMultiplier = 25f;
@@ -24,7 +25,7 @@ public class JetPack : MonoBehaviour
     {
 
         float jetpackInput = OVRInput.Get(OVRInput.RawAxis1D.LIndexTrigger);
-        if (currentFuel > 0)
+        if (currentFuel > 0 && lifeline.isAlive())
         {
             //Thrust
             rb.AddForce(new Vector3(0, jetpackInput * thrustMultiplier, 0), ForceMode.Force);

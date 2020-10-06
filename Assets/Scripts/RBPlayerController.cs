@@ -6,6 +6,8 @@ public class RBPlayerController : MonoBehaviour
 {
     public float moveSpeed;
     public float snapRotateAmount;
+    public DamageHandeler lifeline;
+
     
     private Rigidbody rb;
 
@@ -17,6 +19,11 @@ public class RBPlayerController : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate() {
+
+            if (!lifeline.isAlive())
+            {
+                return;
+            }
             //input
 			float moveForward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) ? moveSpeed:0;
 			float moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) ? moveSpeed:0;
