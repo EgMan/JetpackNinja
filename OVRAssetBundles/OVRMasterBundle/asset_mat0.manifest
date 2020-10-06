@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3752304024
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 50d906aeabbfe89f7274270c11ae36b7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 21c99c86a43ad817b2cb7f65458ae090
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Knife/Material/Knife_mat.mat
+- Assets/New Material.mat
+- Assets/Knife/Material/Knife_mat_lod.mat
+- Assets/MASH Virtual/Assets/Material/Table Old Mat.mat
+- Assets/New Material 1.mat
+- Assets/MASH Virtual/Assets/Material/Table New Mat.mat
+Dependencies:
+- C:/Dev/Bladebender-VR/OVRAssetBundles/OVRMasterBundle/asset_png0

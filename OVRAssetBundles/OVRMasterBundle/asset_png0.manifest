@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 980505153
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 94afe3057e30e7e208c477165149a856
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9e6ad29cbd2df8fbe1a15315db0e51ab
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_bar.png
+- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_New_AlbedoTransparency.png
+- Assets/Knife/Material/Albedo.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/translucent_01.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/header.png
+- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_MetallicSmoothness.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/button.png
+- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_AlbedoTransparency.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_slider.png
+- Assets/Knife/Material/MetallicSmoothness.png
+- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_New_MetallicSmoothness.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/separator.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png
+- Assets/Knife/Material/Normal.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_off.png
+- Assets/MASH Virtual/Assets/Texutre/Parking_Table_Table_Old_Normal.png
+- Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_on.png
+Dependencies: []
