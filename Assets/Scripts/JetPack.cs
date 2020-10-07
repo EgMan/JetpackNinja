@@ -11,14 +11,19 @@ public class JetPack : MonoBehaviour
     public Text FuelLabel, ThrustLabel;
     public float thrustMultiplier = 25f;
     public AudioSource soundEffect;
+    public GameObject flameParticleEffect, emberParticleEffect;
     private Rigidbody rb;
     private CharacterController character;
     private float currentFuel;
+    private ParticleSystem.MainModule flameParticleEffectMain;
+    private ParticleSystem.EmissionModule emberParticleEffectEmission;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         character = gameObject.GetComponent<CharacterController>();
         currentFuel = maxFuel;
+        flameParticleEffectMain  = flameParticleEffect.GetComponent<ParticleSystem>().main;
+        emberParticleEffectEmission = emberParticleEffect.GetComponent<ParticleSystem>().emission;
     }
 
     private void FixedUpdate()
@@ -30,6 +35,8 @@ public class JetPack : MonoBehaviour
             //Thrust
             rb.AddForce(new Vector3(0, jetpackInput * thrustMultiplier, 0), ForceMode.Force);
             soundEffect.volume = jetpackInput;
+            flameParticleEffectMain.startLifetimeMultiplier = jetpackInput;
+            emberParticleEffectEmission.rateOverTime = 200*jetpackInput;
             ThrustBar.value = Mathf.Floor(jetpackInput * 100);
             ThrustLabel.text = $"Thrust {ThrustBar.value}%";
 
@@ -41,6 +48,8 @@ public class JetPack : MonoBehaviour
         else
         {
             soundEffect.volume = 0;
+            flameParticleEffectMain.startLifetimeMultiplier = 0;
+            emberParticleEffectEmission.rateOverTime = 0;
             ThrustBar.value = 0;
             ThrustLabel.text = "Thrust 0%";
 
@@ -48,8 +57,6 @@ public class JetPack : MonoBehaviour
             FuelBar.value = 0;
             FuelLabel.text = "Fuel 0%";
         }
-
-
 
         if (Input.GetKey(KeyCode.J))
         {
