@@ -5,12 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject wristMenu;
+    private bool startButtonPreviousFrame;
+
     // Update is called once per frame
     void Update()
     {
         if (OVRInput.Get(OVRInput.Button.Two) || OVRInput.Get(OVRInput.Button.Four))
         {
-             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        bool startButtonCurrentFrame = OVRInput.Get(OVRInput.Button.Start);
+        if (startButtonPreviousFrame && !startButtonCurrentFrame)
+        {
+            wristMenu.SetActive(!wristMenu.activeInHierarchy);
+        }
+        startButtonPreviousFrame = startButtonCurrentFrame;
     }
 }
