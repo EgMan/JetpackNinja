@@ -11,7 +11,7 @@ public class ClimberHand : MonoBehaviour
     public float grabEnd = 0.35f;
     public bool grabbing = false;
     private int intersectingClimbable = 0;
-    private Collider grabbedObject = null;
+    public Collider grabbedObject = null;
     //private List<Collider> climbables = new List<Collider>();
 
     public Collider getGrabbedCollider()

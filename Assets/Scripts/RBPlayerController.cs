@@ -5,7 +5,7 @@ using UnityEngine;
 public class RBPlayerController : MonoBehaviour
 {
     public float moveSpeed;
-    public float snapRotateAmount;
+    public float snapRotateAmount = 2f;
     public DamageHandeler lifeline;
 
     
@@ -30,8 +30,11 @@ public class RBPlayerController : MonoBehaviour
 			float moveLeft = Input.GetKey(KeyCode.A) ? moveSpeed:0;
 			float moveRight = Input.GetKey(KeyCode.D) ? moveSpeed:0;
 
-            bool turnLeft = Input.GetKey(KeyCode.LeftArrow) || OVRInput.Get(OVRInput.Button.SecondaryThumbstickLeft);
-            bool turnRight =  Input.GetKey(KeyCode.RightArrow) || OVRInput.Get(OVRInput.Button.SecondaryThumbstickRight);
+            // bool turnLeft = Input.GetKey(KeyCode.LeftArrow) || OVRInput.Get(OVRInput.Button.SecondaryThumbstickLeft);
+            // bool turnRight =  Input.GetKey(KeyCode.RightArrow) || OVRInput.Get(OVRInput.Button.SecondaryThumbstickRight);
+            float yawAmount = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).x + 
+                (Input.GetKey(KeyCode.RightArrow) ? 1 : 0) + 
+                (Input.GetKey(KeyCode.LeftArrow) ? -1 : 0);
 
 
             // Translational movement
@@ -50,14 +53,16 @@ public class RBPlayerController : MonoBehaviour
 
             // Rotational movement
             Vector3 euler = transform.rotation.eulerAngles;
-            if (turnRight)
-            {
-                euler.y += snapRotateAmount;
-            }
-            if (turnLeft)
-            {
-                euler.y -= snapRotateAmount;
-            }
+            euler.y += yawAmount * snapRotateAmount;
+            // if (turnRight)
+            // {
+            //     euler.y += snapRotateAmount;
+            // }
+            // if (turnLeft)
+            // {
+            //     euler.y -= snapRotateAmount;
+            // }
+
 			transform.rotation = Quaternion.Euler(euler);
     }
 }

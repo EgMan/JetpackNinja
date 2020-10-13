@@ -6,7 +6,7 @@ public class Climber : MonoBehaviour
 {
     public ClimberHand left, right;
     private ClimberHand currentlyGrabbing = null;
-    private Vector3 initialHandPos, initialCameraHandOffset, initialClimbablePos;
+    private Vector3 initialHandPos, initialObjectPos, initialCameraHandOffset, initialClimbablePos;
     private Rigidbody rb;
     private void Start() {
         rb = GetComponent<Rigidbody>();
@@ -69,6 +69,7 @@ public class Climber : MonoBehaviour
     {
         currentlyGrabbing = hand;
         initialHandPos = hand.transform.position;
+        initialObjectPos = hand.grabbedObject.transform.position;
         initialCameraHandOffset = rb.position - initialHandPos;
         rb.useGravity = false;
         rb.isKinematic = true;
@@ -80,7 +81,13 @@ public class Climber : MonoBehaviour
         {
             return;
         }
-        // TODO add grabbed object offset
-        rb.MovePosition(rb.position + initialHandPos - currentlyGrabbing.transform.position);
+        // Vector to move camera in opposite direction that the grabbing hand moves
+        Vector3 HandOffsetVector = initialHandPos - currentlyGrabbing.transform.position;
+
+        // Vector to move camera with the movement of the object that is being grabbed
+        Vector3 GrabbedObjectOffsetVector = currentlyGrabbing.grabbedObject.transform.position - initialObjectPos;
+
+        // Move camera
+        rb.MovePosition(rb.position + HandOffsetVector + GrabbedObjectOffsetVector);
     }
 }
