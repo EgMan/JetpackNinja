@@ -592,6 +592,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 661656924, guid: c4c57e1a703c58346a8ecb805e7f7b40, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 661656926, guid: c4c57e1a703c58346a8ecb805e7f7b40, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 661656926, guid: c4c57e1a703c58346a8ecb805e7f7b40, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 661656926, guid: c4c57e1a703c58346a8ecb805e7f7b40, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1242710595, guid: c4c57e1a703c58346a8ecb805e7f7b40, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
